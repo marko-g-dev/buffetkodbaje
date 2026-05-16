@@ -8,8 +8,8 @@
           "id": "prsut",
           "name": { "hr": "Drniški pršut", "en": "Drniš dry-cured ham" },
           "description": {
-            "hr": "Sušen na hladnoj buri, rezan na tanke listove. Ponos našeg kraja.",
-            "en": "Cured in the cold bura wind, sliced paper-thin. The pride of our region."
+            "hr": "Pravi drniški pršut, s bilim, ka šta i mora bit. Ko za bolje ne zna, ne zna šta propušta.",
+            "en": "Real Drniš pršut with the proper white fat, just as it should be. If you haven't tried the real thing, you don't know what you're missing."
           },
           "price": null,
           "featured": true,
@@ -19,8 +19,8 @@
           "id": "sir",
           "name": { "hr": "Domaći sir", "en": "Homemade cheese" },
           "description": {
-            "hr": "Tvrdi ovčji sir iz lokalne proizvodnje.",
-            "en": "Hard sheep's cheese from local production."
+            "hr": "Ovčji sir iz mišine, od lokalnih proizvođača.",
+            "en": "Sheep's cheese aged in a traditional leather sack, from local producers."
           },
           "price": null,
           "featured": false,
@@ -33,26 +33,48 @@
       "name": { "hr": "Topla jela", "en": "Warm dishes" },
       "items": [
         {
-          "id": "peka",
-          "name": { "hr": "Ispod peke", "en": "Under the bell (peka)" },
+          "id": "teletina",
+          "name": { "hr": "Pečena teletina s koljenicom", "en": "Roast veal with knuckle" },
           "description": {
-            "hr": "Teletina ili janjetina s krumpirom, pečena na tradicionalan način.",
-            "en": "Veal or lamb with potatoes, roasted in the traditional way."
+            "hr": "Zvijezda našeg menija — teleća koljenica s pečenim krumpirima, kiselim kupusom i zapečenom fažolom.",
+            "en": "The star of our menu — veal knuckle with roast potatoes, sauerkraut, and baked beans."
           },
           "price": null,
           "featured": true,
-          "image": "food/peka.webp"
+          "image": "food/teletina.webp"
         },
         {
-          "id": "pasticada",
-          "name": { "hr": "Pašticada", "en": "Pašticada (braised beef)" },
+          "id": "tripice",
+          "name": { "hr": "Tripice", "en": "Tripe stew" },
           "description": {
-            "hr": "Dalmatinski specijalitet — govedina u slatko-kiselom umaku s njokima.",
-            "en": "Dalmatian specialty — beef in a sweet-and-sour sauce served with gnocchi."
+            "hr": "Domaće tripice, ka šta ih je baba radila. Na suvom mesu, na prasetini.",
+            "en": "Homemade tripe stew, just like grandma used to make. Cooked with smoked pork, the traditional way."
           },
           "price": null,
           "featured": false,
-          "image": "food/pasticada.webp"
+          "image": "food/tripice.webp"
+        },
+        {
+          "id": "grah",
+          "name": { "hr": "Grah i manistre", "en": "Bean and pasta stew" },
+          "description": {
+            "hr": "Domaći grah ili manistre s ječmom — klasika za radnog čovika.",
+            "en": "Homemade bean stew or barley pasta — a classic that fuels working folk."
+          },
+          "price": null,
+          "featured": false,
+          "image": "food/grah.webp"
+        },
+        {
+          "id": "peka",
+          "name": { "hr": "Ispod peke", "en": "Under the bell (peka)" },
+          "description": {
+            "hr": "Teletina ili janjetina s krumpirom, pečena ispod peke ka šta se radi oduvijek.",
+            "en": "Veal or lamb with potatoes, slow-roasted under the iron bell the way it's always been done."
+          },
+          "price": null,
+          "featured": false,
+          "image": "food/peka.webp"
         }
       ]
     },
@@ -75,8 +97,8 @@
           "id": "raznjici",
           "name": { "hr": "Ražnjići", "en": "Skewers" },
           "description": {
-            "hr": "Sočni komadi mesa na ražnju s povrćem.",
-            "en": "Juicy meat skewers with vegetables."
+            "hr": "Sočni komadi mesa na ražnju.",
+            "en": "Juicy meat skewers off the grill."
           },
           "price": null,
           "featured": false,

@@ -1,11 +1,11 @@
 {
   "meta.title": {
-    "hr": "Buffet Kod Baje — Domaća kuhinja u Drnišu",
-    "en": "Buffet Kod Baje — Homemade cuisine in Drniš"
+    "hr": "Buffet Kod Baje — Domaća spiza u Drnišu",
+    "en": "Buffet Kod Baje — Homemade food in Drniš"
   },
   "meta.description": {
-    "hr": "Tradicionalni restoran u srcu Drniša. Domaća hrana, drniški pršut i ruralni ugođaj.",
-    "en": "Traditional restaurant in the heart of Drniš. Homemade food, Drniš pršut, and rustic charm."
+    "hr": "Domaća spiza na drniškoj pjaci. Pršut, tripice, peka i sve šta ti duša poželi — kvalitetno, obilato i po normalnoj cieni.",
+    "en": "Homemade food on the Drniš market square. Pršut, tripe, peka and everything your heart desires — quality, generous portions, fair prices."
   },
   "nav.home": { "hr": "Naslovna", "en": "Home" },
   "nav.about": { "hr": "O nama", "en": "About" },
@@ -13,8 +13,8 @@
   "nav.gallery": { "hr": "Galerija", "en": "Gallery" },
   "nav.contact": { "hr": "Kontakt", "en": "Contact" },
   "hero.tagline": {
-    "hr": "Domaća kuhinja u srcu Drniša",
-    "en": "Homemade cuisine in the heart of Drniš"
+    "hr": "Domaća spiza na drniškoj pjaci",
+    "en": "Homemade food on the Drniš market square"
   },
   "hero.cta": {
     "hr": "Pogledaj jelovnik",
@@ -25,24 +25,24 @@
     "en": "About us"
   },
   "about.text1": {
-    "hr": "Buffet Kod Baje je tradicionalni restoran smješten u srcu Drniša, gdje se od davnina njeguje ljubav prema domaćoj hrani i iskrenom gostoprimstvu.",
-    "en": "Buffet Kod Baje is a traditional restaurant located in the heart of Drniš, where a love for homemade food and genuine hospitality has been cherished for generations."
+    "hr": "Kod Baje se ide ist već pola vika. Na istom mistu, na drniškoj pjaci, di su se ljudi oduvijek nalazili, marendali i družili. Nama je ugostiteljstvo tradicija, a gostionica institucija!",
+    "en": "People have been coming to Baja's to eat for half a century. Same spot, on the Drniš market square, where folks have always gathered, shared a meal, and caught up. For us, hospitality is a tradition — and this restaurant is an institution."
   },
   "about.text2": {
-    "hr": "Kod nas nema pretjerivanja — samo poštena, domaća kuhinja pripremljena od svježih, lokalnih namirnica. Naš drniški pršut, sušen na hladnoj buri, ponos je ovoga kraja.",
-    "en": "Here, there's no fuss — just honest, homemade cooking prepared from fresh, local ingredients. Our Drniš pršut, cured in the cold bura wind, is the pride of this region."
+    "hr": "Spiza mora bit kvalitetna, obilata i ne smi bit skupa. Kod nas idu ljudi koji radu cili dan — i kad dođeš, mora bit i dobro i obilato, jer čovik koji radi ogladni.",
+    "en": "The food has to be quality, generous, and affordable. Our regulars work hard all day — so when they sit down to eat, it better be good and plenty, because a working man gets hungry."
   },
   "about.text3": {
-    "hr": "Dođite kao gost, odlazite kao prijatelj. Uz retro atmosferu i toplinu doma, svaki obrok postaje iskustvo.",
-    "en": "Come as a guest, leave as a friend. With a retro atmosphere and the warmth of home, every meal becomes an experience."
+    "hr": "S ljudima je najlipše radit. Mi znamo na vrata kad ko dolazi, kakav je. I tako, mi s njima, oni s nama — pa dok bude išlo!",
+    "en": "Working with people is the best part. We know every face that walks through that door. That's how it goes — we're there for them, they're there for us. As long as it lasts!"
   },
   "menu.title": {
     "hr": "Jelovnik",
     "en": "Our menu"
   },
   "menu.subtitle": {
-    "hr": "Najbolje od domaće kuhinje",
-    "en": "The best of homemade cuisine"
+    "hr": "Domaća spiza, ka šta se mora",
+    "en": "Homemade food, the way it should be"
   },
   "menu.featured_badge": {
     "hr": "★ Naš ponos",
@@ -53,8 +53,8 @@
     "en": "Gallery"
   },
   "gallery.subtitle": {
-    "hr": "Zavirite u naš svijet",
-    "en": "A glimpse into our world"
+    "hr": "Kako to kod nas izgleda",
+    "en": "What it looks like at our place"
   },
   "contact.title": {
     "hr": "Gdje nas naći",
@@ -62,19 +62,19 @@
   },
   "contact.address_label": { "hr": "Adresa", "en": "Address" },
   "contact.address": {
-    "hr": "Drniš, Hrvatska",
-    "en": "Drniš, Croatia"
+    "hr": "ul. Nikole Tesle 18, Drniš, Hrvatska",
+    "en": "ul. Nikole Tesle 18, Drniš, Croatia"
   },
   "contact.hours_label": { "hr": "Radno vrijeme", "en": "Opening hours" },
   "contact.hours": {
-    "hr": "Pon–Sub: 07:00–22:00 | Ned: Zatvoreno",
-    "en": "Mon–Sat: 07:00–22:00 | Sun: Closed"
+    "hr": "Pon–Sub: 07:00–16:00 | Ned: Zatvoreno",
+    "en": "Mon–Sat: 07:00–16:00 | Sun: Closed"
   },
   "contact.phone_label": { "hr": "Telefon", "en": "Phone" },
-  "contact.phone": { "hr": "+385 XX XXX XXXX", "en": "+385 XX XXX XXXX" },
+  "contact.phone": { "hr": "+385 22 887 940 | +385 91 549 2397", "en": "+385 22 887 940 | +385 91 549 2397" },
   "contact.note": {
-    "hr": "Nalazimo se u blizini glavnog trga u Drnišu.",
-    "en": "We are located near the main square in Drniš."
+    "hr": "Nalazimo se na glavnoj pjaci u Drnišu.",
+    "en": "We are located on the main market square in Drniš."
   },
   "footer.copyright": {
     "hr": "© 2026 Buffet Kod Baje. Sva prava pridržana.",

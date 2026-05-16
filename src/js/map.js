@@ -37,7 +37,7 @@ export function initMapSimple() {
   const mapContainer = document.querySelector('[data-map]');
   if (!mapContainer) return;
 
-  const query = encodeURIComponent('Drniš, Croatia');
+  const query = encodeURIComponent('Ulica Nikole Tesle 18, Drniš, Croatia');
 
   const iframe = document.createElement('iframe');
   iframe.src = `https://maps.google.com/maps?q=${query}&output=embed`;
