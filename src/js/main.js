@@ -7,13 +7,18 @@ import '../css/main.css';
 import { initI18n } from './i18n.js';
 import { initAnimations, initParallax } from './animations.js';
 import { initMapSimple } from './map.js';
+import { renderMenu, initMenuLangListener } from './menu.js';
 
 // Initialize everything when DOM is ready
 document.addEventListener('DOMContentLoaded', () => {
   // Language system
   initI18n();
 
-  // Scroll animations
+  // Render menu items from JSON data, then register for language changes
+  renderMenu();
+  initMenuLangListener();
+
+  // Scroll animations (after menu renders, so new elements get observed)
   initAnimations();
 
   // Hero parallax

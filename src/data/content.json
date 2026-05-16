@@ -44,6 +44,10 @@
     "hr": "Najbolje od domaće kuhinje",
     "en": "The best of homemade cuisine"
   },
+  "menu.featured_badge": {
+    "hr": "★ Naš ponos",
+    "en": "★ Our pride"
+  },
   "gallery.title": {
     "hr": "Galerija",
     "en": "Gallery"
