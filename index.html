@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Buffet Kod Baje — Domaća kuhinja u Drnišu</title>
+  <meta name="description" content="Tradicionalni restoran u srcu Drniša. Domaća hrana, drniški pršut i ruralni ugođaj." />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Buffet Kod Baje — Domaća kuhinja u Drnišu" />
+  <meta property="og:description" content="Tradicionalni restoran u srcu Drniša. Domaća hrana, drniški pršut i ruralni ugođaj." />
+  <meta property="og:type" content="restaurant" />
+  <meta property="og:locale" content="hr_HR" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <!-- <meta property="og:image" content="/img/brand/og-image.webp" /> -->
+
+  <!-- Hreflang -->
+  <link rel="alternate" hreflang="hr" href="https://buffetkodabje.hr/" />
+  <link rel="alternate" hreflang="en" href="https://buffetkodabje.hr/" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@400;500;700&display=swap" rel="stylesheet" />
+
+  <!-- Structured Data (Schema.org) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "Buffet Kod Baje",
+    "description": "Traditional restaurant in Drniš serving homemade Croatian cuisine, famous Drniš pršut, and local specialties.",
+    "servesCuisine": ["Croatian", "Dalmatian", "Traditional"],
+    "priceRange": "$",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "UPDATE_WITH_STREET",
+      "addressLocality": "Drniš",
+      "addressRegion": "Šibensko-kninska županija",
+      "postalCode": "22320",
+      "addressCountry": "HR"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "43.8631",
+      "longitude": "16.1583"
+    },
+    "telephone": "+385-XX-XXX-XXXX",
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+        "opens": "07:00",
+        "closes": "22:00"
+      }
+    ],
+    "image": "https://buffetkodabje.hr/img/brand/og-image.webp",
+    "url": "https://buffetkodabje.hr"
+  }
+  </script>
+
+  <!-- Vite entry -->
+  <script type="module" src="/src/js/main.js"></script>
+</head>
+<body class="font-body antialiased">
+
+  <!-- ===== NAVIGATION ===== -->
+  <header class="fixed top-0 left-0 right-0 z-50 bg-brown/95 backdrop-blur-sm">
+    <nav class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+      <!-- Logo / Name -->
+      <a href="#" class="text-cream font-heading text-xl font-medium">
+        Buffet Kod Baje
+      </a>
+
+      <!-- Desktop nav -->
+      <div class="hidden md:flex items-center gap-8">
+        <a href="#o-nama" class="nav-link text-cream/80 hover:text-cream" data-i18n="nav.about">O nama</a>
+        <a href="#jelovnik" class="nav-link text-cream/80 hover:text-cream" data-i18n="nav.menu">Jelovnik</a>
+        <a href="#galerija" class="nav-link text-cream/80 hover:text-cream" data-i18n="nav.gallery">Galerija</a>
+        <a href="#kontakt" class="nav-link text-cream/80 hover:text-cream" data-i18n="nav.contact">Kontakt</a>
+
+        <!-- Language toggle -->
+        <button
+          data-lang-toggle
+          class="ml-4 px-3 py-1 border border-cream/30 rounded text-cream text-sm font-medium hover:bg-cream/10 transition-colors"
+          aria-label="Switch to English"
+        >EN</button>
+      </div>
+
+      <!-- Mobile hamburger -->
+      <button
+        data-menu-toggle
+        class="md:hidden text-cream p-2"
+        aria-label="Open menu"
+        aria-expanded="false"
+      >
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+      </button>
+    </nav>
+
+    <!-- Mobile nav dropdown -->
+    <div data-mobile-nav class="md:hidden max-h-0 overflow-hidden transition-all duration-300 bg-brown/95">
+      <div class="px-6 py-4 flex flex-col gap-4">
+        <a href="#o-nama" class="nav-link text-cream/80" data-i18n="nav.about">O nama</a>
+        <a href="#jelovnik" class="nav-link text-cream/80" data-i18n="nav.menu">Jelovnik</a>
+        <a href="#galerija" class="nav-link text-cream/80" data-i18n="nav.gallery">Galerija</a>
+        <a href="#kontakt" class="nav-link text-cream/80" data-i18n="nav.contact">Kontakt</a>
+        <button
+          data-lang-toggle
+          class="self-start px-3 py-1 border border-cream/30 rounded text-cream text-sm font-medium"
+          aria-label="Switch to English"
+        >EN</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section id="naslovna" class="hero-bg relative min-h-screen flex items-center justify-center bg-beige">
+    <!-- Placeholder overlay (replace bg-beige with background-image when photos ready) -->
+    <div class="absolute inset-0 bg-brown/40"></div>
+
+    <div class="relative z-10 text-center px-6">
+      <!-- Logo placeholder -->
+      <div class="w-24 h-24 mx-auto mb-6 rounded-full bg-terracotta/20 border-2 border-terracotta flex items-center justify-center">
+        <span class="text-terracotta font-heading text-2xl font-bold">BKB</span>
+      </div>
+
+      <h1 class="font-heading text-4xl md:text-6xl text-cream font-medium mb-4">
+        Buffet Kod Baje
+      </h1>
+      <p class="text-cream/90 text-lg md:text-xl mb-8 max-w-lg mx-auto" data-i18n="hero.tagline">
+        Domaća kuhinja u srcu Drniša
+      </p>
+      <a
+        href="#jelovnik"
+        class="inline-block px-8 py-3 bg-terracotta text-cream rounded-lg font-medium hover:bg-terracotta-dark transition-colors"
+        data-i18n="hero.cta"
+      >
+        Pogledaj jelovnik
+      </a>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT SECTION ===== -->
+  <section id="o-nama" class="section max-w-4xl mx-auto">
+    <div class="reveal">
+      <h2 class="font-heading text-3xl md:text-4xl text-brown mb-8 text-center" data-i18n="about.title">
+        O nama
+      </h2>
+    </div>
+
+    <div class="space-y-6 text-brown-muted text-lg leading-relaxed max-w-2xl mx-auto">
+      <p class="reveal reveal-delay-1" data-i18n="about.text1">
+        Buffet Kod Baje je tradicionalni restoran smješten u srcu Drniša, gdje se od davnina njeguje ljubav prema domaćoj hrani i iskrenom gostoprimstvu.
+      </p>
+      <p class="reveal reveal-delay-2" data-i18n="about.text2">
+        Kod nas nema pretjerivanja — samo poštena, domaća kuhinja pripremljena od svježih, lokalnih namirnica. Naš drniški pršut, sušen na hladnoj buri, ponos je ovoga kraja.
+      </p>
+      <p class="reveal reveal-delay-3" data-i18n="about.text3">
+        Dođite kao gost, odlazite kao prijatelj. Uz retro atmosferu i toplinu doma, svaki obrok postaje iskustvo.
+      </p>
+    </div>
+  </section>
+
+  <!-- ===== MENU SECTION ===== -->
+  <section id="jelovnik" class="section bg-beige/50">
+    <div class="max-w-6xl mx-auto">
+      <div class="text-center mb-12 reveal">
+        <h2 class="font-heading text-3xl md:text-4xl text-brown mb-3" data-i18n="menu.title">
+          Jelovnik
+        </h2>
+        <p class="text-brown-muted text-lg" data-i18n="menu.subtitle">
+          Najbolje od domaće kuhinje
+        </p>
+      </div>
+
+      <!-- Featured: Pršut -->
+      <div class="reveal mb-12 bg-white rounded-xl p-6 md:p-8 border border-terracotta/20 flex flex-col md:flex-row gap-6 items-center">
+        <div class="w-full md:w-1/3 aspect-[4/3] img-placeholder">
+          <span data-i18n="placeholder.image">Fotografija dolazi uskoro</span>
+        </div>
+        <div class="flex-1">
+          <span class="inline-block px-3 py-1 bg-terracotta/10 text-terracotta text-xs font-medium rounded-full mb-3">
+            ★ Naš ponos
+          </span>
+          <h3 class="font-heading text-2xl text-brown mb-2">Drniški pršut</h3>
+          <p class="text-brown-muted leading-relaxed" data-i18n="menu.prsut_desc">
+            Sušen na hladnoj buri, rezan na tanke listove. Ponos našeg kraja.
+          </p>
+        </div>
+      </div>
+
+      <!-- Menu grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Card: Peka -->
+        <div class="menu-card reveal reveal-delay-1">
+          <div class="aspect-[4/3] img-placeholder mb-4">
+            <span data-i18n="placeholder.image">Fotografija dolazi uskoro</span>
+          </div>
+          <h3 class="font-heading text-lg text-brown mb-1">Ispod peke</h3>
+          <p class="text-brown-muted text-sm">Teletina ili janjetina s krumpirom, pečena na tradicionalan način.</p>
+        </div>
+
+        <!-- Card: Pašticada -->
+        <div class="menu-card reveal reveal-delay-2">
+          <div class="aspect-[4/3] img-placeholder mb-4">
+            <span data-i18n="placeholder.image">Fotografija dolazi uskoro</span>
+          </div>
+          <h3 class="font-heading text-lg text-brown mb-1">Pašticada</h3>
+          <p class="text-brown-muted text-sm">Dalmatinski specijalitet — govedina u slatko-kiselom umaku s njokima.</p>
+        </div>
+
+        <!-- Card: Ćevapi -->
+        <div class="menu-card reveal reveal-delay-3">
+          <div class="aspect-[4/3] img-placeholder mb-4">
+            <span data-i18n="placeholder.image">Fotografija dolazi uskoro</span>
+          </div>
+          <h3 class="font-heading text-lg text-brown mb-1">Ćevapi</h3>
+          <p class="text-brown-muted text-sm">Domaći ćevapi s lukom i kajmakom.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== GALLERY SECTION ===== -->
+  <section id="galerija" class="section">
+    <div class="max-w-6xl mx-auto">
+      <div class="text-center mb-12 reveal">
+        <h2 class="font-heading text-3xl md:text-4xl text-brown mb-3" data-i18n="gallery.title">
+          Galerija
+        </h2>
+        <p class="text-brown-muted text-lg" data-i18n="gallery.subtitle">
+          Zavirite u naš svijet
+        </p>
+      </div>
+
+      <!-- Gallery grid with placeholders -->
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+        <div class="gallery-item aspect-square img-placeholder reveal reveal-delay-1">
+          <span data-i18n="placeholder.image">Fotografija dolazi uskoro</span>
+        </div>
+        <div class="gallery-item aspect-[4/3] md:col-span-2 img-placeholder reveal reveal-delay-2">
+          <span data-i18n="placeholder.image">Fotografija dolazi uskoro</span>
+        </div>
+        <div class="gallery-item aspect-[4/3] md:col-span-2 img-placeholder reveal reveal-delay-1">
+          <span data-i18n="placeholder.image">Fotografija dolazi uskoro</span>
+        </div>
+        <div class="gallery-item aspect-square img-placeholder reveal reveal-delay-2">
+          <span data-i18n="placeholder.image">Fotografija dolazi uskoro</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT / LOCATION SECTION ===== -->
+  <section id="kontakt" class="section bg-beige/50">
+    <div class="max-w-6xl mx-auto">
+      <div class="text-center mb-12 reveal">
+        <h2 class="font-heading text-3xl md:text-4xl text-brown mb-3" data-i18n="contact.title">
+          Gdje nas naći
+        </h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 reveal">
+        <!-- Contact info -->
+        <div class="space-y-6">
+          <div>
+            <h3 class="text-sm font-medium text-brown-muted uppercase tracking-wide mb-1" data-i18n="contact.address_label">Adresa</h3>
+            <p class="text-brown text-lg" data-i18n="contact.address">Drniš, Hrvatska</p>
+          </div>
+          <div>
+            <h3 class="text-sm font-medium text-brown-muted uppercase tracking-wide mb-1" data-i18n="contact.hours_label">Radno vrijeme</h3>
+            <p class="text-brown text-lg" data-i18n="contact.hours">Pon–Sub: 07:00–22:00 | Ned: Zatvoreno</p>
+          </div>
+          <div>
+            <h3 class="text-sm font-medium text-brown-muted uppercase tracking-wide mb-1" data-i18n="contact.phone_label">Telefon</h3>
+            <p class="text-brown text-lg" data-i18n="contact.phone">+385 XX XXX XXXX</p>
+          </div>
+          <p class="text-brown-muted italic" data-i18n="contact.note">
+            Nalazimo se u blizini glavnog trga u Drnišu.
+          </p>
+        </div>
+
+        <!-- Map -->
+        <div class="w-full h-64 md:h-80 rounded-lg overflow-hidden bg-beige" data-map>
+          <!-- Map iframe injected by map.js -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="bg-brown text-cream/70 py-8 px-6">
+    <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
+      <p class="text-sm" data-i18n="footer.copyright">
+        © 2026 Buffet Kod Baje. Sva prava pridržana.
+      </p>
+      <div class="flex gap-4">
+        <!-- Social links (update hrefs when available) -->
+        <a href="#" class="hover:text-cream transition-colors" aria-label="Facebook">
+          <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+        </a>
+        <a href="#" class="hover:text-cream transition-colors" aria-label="Instagram">
+          <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

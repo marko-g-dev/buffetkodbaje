@@ -1,0 +1,88 @@
+{
+  "categories": [
+    {
+      "id": "cold",
+      "name": { "hr": "Hladna predjela", "en": "Cold starters" },
+      "items": [
+        {
+          "id": "prsut",
+          "name": { "hr": "Drniški pršut", "en": "Drniš dry-cured ham" },
+          "description": {
+            "hr": "Sušen na hladnoj buri, rezan na tanke listove. Ponos našeg kraja.",
+            "en": "Cured in the cold bura wind, sliced paper-thin. The pride of our region."
+          },
+          "price": null,
+          "featured": true,
+          "image": "food/prsut.webp"
+        },
+        {
+          "id": "sir",
+          "name": { "hr": "Domaći sir", "en": "Homemade cheese" },
+          "description": {
+            "hr": "Tvrdi ovčji sir iz lokalne proizvodnje.",
+            "en": "Hard sheep's cheese from local production."
+          },
+          "price": null,
+          "featured": false,
+          "image": "food/sir.webp"
+        }
+      ]
+    },
+    {
+      "id": "warm",
+      "name": { "hr": "Topla jela", "en": "Warm dishes" },
+      "items": [
+        {
+          "id": "peka",
+          "name": { "hr": "Ispod peke", "en": "Under the bell (peka)" },
+          "description": {
+            "hr": "Teletina ili janjetina s krumpirom, pečena na tradicionalan način.",
+            "en": "Veal or lamb with potatoes, roasted in the traditional way."
+          },
+          "price": null,
+          "featured": true,
+          "image": "food/peka.webp"
+        },
+        {
+          "id": "pasticada",
+          "name": { "hr": "Pašticada", "en": "Pašticada (braised beef)" },
+          "description": {
+            "hr": "Dalmatinski specijalitet — govedina u slatko-kiselom umaku s njokima.",
+            "en": "Dalmatian specialty — beef in a sweet-and-sour sauce served with gnocchi."
+          },
+          "price": null,
+          "featured": false,
+          "image": "food/pasticada.webp"
+        }
+      ]
+    },
+    {
+      "id": "grilled",
+      "name": { "hr": "S roštilja", "en": "From the grill" },
+      "items": [
+        {
+          "id": "cevapi",
+          "name": { "hr": "Ćevapi", "en": "Ćevapi (grilled minced meat)" },
+          "description": {
+            "hr": "Domaći ćevapi s lukom i kajmakom.",
+            "en": "Homemade ćevapi with onions and kajmak cream."
+          },
+          "price": null,
+          "featured": false,
+          "image": "food/cevapi.webp"
+        },
+        {
+          "id": "raznjici",
+          "name": { "hr": "Ražnjići", "en": "Skewers" },
+          "description": {
+            "hr": "Sočni komadi mesa na ražnju s povrćem.",
+            "en": "Juicy meat skewers with vegetables."
+          },
+          "price": null,
+          "featured": false,
+          "image": "food/raznjici.webp"
+        }
+      ]
+    }
+  ]
+}
