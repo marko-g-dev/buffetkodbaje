@@ -75,8 +75,8 @@
 
       <!-- Desktop nav -->
       <div class="hidden md:flex items-center gap-8">
-        <a href="#o-nama" class="nav-link text-cream/80 hover:text-cream" data-i18n="nav.about">O nama</a>
         <a href="#jelovnik" class="nav-link text-cream/80 hover:text-cream" data-i18n="nav.menu">Jelovnik</a>
+        <a href="#o-nama" class="nav-link text-cream/80 hover:text-cream" data-i18n="nav.about">O nama</a>
         <a href="#galerija" class="nav-link text-cream/80 hover:text-cream" data-i18n="nav.gallery">Galerija</a>
         <a href="#kontakt" class="nav-link text-cream/80 hover:text-cream" data-i18n="nav.contact">Kontakt</a>
 
@@ -88,31 +88,33 @@
         >EN</button>
       </div>
 
-      <!-- Mobile hamburger -->
-      <button
-        data-menu-toggle
-        class="md:hidden text-cream p-2"
-        aria-label="Open menu"
-        aria-expanded="false"
-      >
-        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
-        </svg>
-      </button>
+      <!-- Mobile: language toggle + hamburger -->
+      <div class="md:hidden flex items-center gap-2">
+        <button
+          data-lang-toggle
+          class="px-3 py-1 border border-cream/30 rounded text-cream text-sm font-medium hover:bg-cream/10 transition-colors"
+          aria-label="Switch to English"
+        >EN</button>
+        <button
+          data-menu-toggle
+          class="text-cream p-2"
+          aria-label="Open menu"
+          aria-expanded="false"
+        >
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+        </button>
+      </div>
     </nav>
 
     <!-- Mobile nav dropdown -->
     <div data-mobile-nav class="md:hidden max-h-0 overflow-hidden transition-all duration-300 bg-brown/95">
       <div class="px-6 py-4 flex flex-col gap-4">
-        <a href="#o-nama" class="nav-link text-cream/80" data-i18n="nav.about">O nama</a>
         <a href="#jelovnik" class="nav-link text-cream/80" data-i18n="nav.menu">Jelovnik</a>
+        <a href="#o-nama" class="nav-link text-cream/80" data-i18n="nav.about">O nama</a>
         <a href="#galerija" class="nav-link text-cream/80" data-i18n="nav.gallery">Galerija</a>
         <a href="#kontakt" class="nav-link text-cream/80" data-i18n="nav.contact">Kontakt</a>
-        <button
-          data-lang-toggle
-          class="self-start px-3 py-1 border border-cream/30 rounded text-cream text-sm font-medium"
-          aria-label="Switch to English"
-        >EN</button>
       </div>
     </div>
   </header>
@@ -139,27 +141,6 @@
       >
         Pogledaj jelovnik
       </a>
-    </div>
-  </section>
-
-  <!-- ===== ABOUT SECTION ===== -->
-  <section id="o-nama" class="section max-w-4xl mx-auto">
-    <div class="reveal">
-      <h2 class="font-heading text-3xl md:text-4xl text-brown mb-8 text-center" data-i18n="about.title">
-        O nama
-      </h2>
-    </div>
-
-    <div class="space-y-6 text-brown-muted text-lg leading-relaxed max-w-2xl mx-auto">
-      <p class="reveal reveal-delay-1" data-i18n="about.text1">
-        Buffet Kod Baje je tradicionalni restoran smješten u srcu Drniša, gdje se od davnina njeguje ljubav prema domaćoj hrani i iskrenom gostoprimstvu.
-      </p>
-      <p class="reveal reveal-delay-2" data-i18n="about.text2">
-        Kod nas nema pretjerivanja — samo poštena, domaća kuhinja pripremljena od svježih, lokalnih namirnica. Naš drniški pršut, sušen na hladnoj buri, ponos je ovoga kraja.
-      </p>
-      <p class="reveal reveal-delay-3" data-i18n="about.text3">
-        Dođite kao gost, odlazite kao prijatelj. Uz retro atmosferu i toplinu doma, svaki obrok postaje iskustvo.
-      </p>
     </div>
   </section>
 
@@ -194,6 +175,27 @@
     </div>
   </section>
 
+  <!-- ===== ABOUT SECTION ===== -->
+  <section id="o-nama" class="section max-w-4xl mx-auto">
+    <div class="reveal">
+      <h2 class="font-heading text-3xl md:text-4xl text-brown mb-8 text-center" data-i18n="about.title">
+        O nama
+      </h2>
+    </div>
+
+    <div class="space-y-6 text-brown-muted text-lg leading-relaxed max-w-2xl mx-auto">
+      <p class="reveal reveal-delay-1" data-i18n="about.text1">
+        Buffet Kod Baje je tradicionalni restoran smješten u srcu Drniša, gdje se od davnina njeguje ljubav prema domaćoj hrani i iskrenom gostoprimstvu.
+      </p>
+      <p class="reveal reveal-delay-2" data-i18n="about.text2">
+        Kod nas nema pretjerivanja — samo poštena, domaća kuhinja pripremljena od svježih, lokalnih namirnica. Naš drniški pršut, sušen na hladnoj buri, ponos je ovoga kraja.
+      </p>
+      <p class="reveal reveal-delay-3" data-i18n="about.text3">
+        Dođite kao gost, odlazite kao prijatelj. Uz retro atmosferu i toplinu doma, svaki obrok postaje iskustvo.
+      </p>
+    </div>
+  </section>
+
   <!-- ===== GALLERY SECTION ===== -->
   <section id="galerija" class="section">
     <div class="max-w-6xl mx-auto">
@@ -207,18 +209,24 @@
       </div>
 
       <!-- Gallery grid -->
-      <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
-        <div class="gallery-item aspect-square reveal reveal-delay-1">
+      <div class="grid grid-cols-2 gap-4">
+        <div class="gallery-item aspect-[4/3] reveal reveal-delay-1">
           <img src="/img/gallery/front.webp" alt="Buffet Kod Baje — pročelje" loading="lazy" />
         </div>
-        <div class="gallery-item aspect-[4/3] md:col-span-2 reveal reveal-delay-2">
+        <div class="gallery-item aspect-[4/3] reveal reveal-delay-2">
           <img src="/img/gallery/exterior.webp" alt="Buffet Kod Baje — terasa i pjaca" loading="lazy" />
         </div>
-        <div class="gallery-item aspect-[4/3] md:col-span-2 reveal reveal-delay-1">
+        <div class="gallery-item aspect-[4/3] reveal reveal-delay-1">
           <img src="/img/gallery/platter.webp" alt="Miješano meso s pomfritom" loading="lazy" />
         </div>
-        <div class="gallery-item aspect-square reveal reveal-delay-2">
+        <div class="gallery-item aspect-[4/3] reveal reveal-delay-2">
           <img src="/img/gallery/prsut-cheese.webp" alt="Pršut i domaći sir" loading="lazy" />
+        </div>
+        <div class="gallery-item aspect-[4/3] reveal reveal-delay-1">
+          <img src="/img/gallery/veal-beans-spread.webp" alt="Teletina s grahom — domaći specijalitet" loading="lazy" />
+        </div>
+        <div class="gallery-item aspect-[4/3] reveal reveal-delay-2">
+          <img src="/img/gallery/exterior-with-owner.webp" alt="Buffet Kod Baje — vlasnik ispred restorana" loading="lazy" />
         </div>
       </div>
     </div>
