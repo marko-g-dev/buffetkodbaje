@@ -24,7 +24,7 @@
           },
           "price": null,
           "featured": false,
-          "image": "food/sir.webp"
+          "image": "food/prsut.webp"
         }
       ]
     },
@@ -34,7 +34,7 @@
       "items": [
         {
           "id": "teletina",
-          "name": { "hr": "Pečena teletina s koljenicom", "en": "Roast veal with knuckle" },
+          "name": { "hr": "Pečena teleteća koljenica", "en": "Roast veal knuckle" },
           "description": {
             "hr": "Zvijezda našeg menija — teleća koljenica s pečenim krumpirima, kiselim kupusom i zapečenom fažolom.",
             "en": "The star of our menu — veal knuckle with roast potatoes, sauerkraut, and baked beans."

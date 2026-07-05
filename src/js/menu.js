@@ -1,13 +1,14 @@
 /**
  * Menu — Renders menu items dynamically from menu.json
- * Supports bilingual content. Listens for language changes via i18n callback.
+ * Text-only layout (no photos), grouped by category. Supports bilingual content.
+ * Listens for language changes via i18n callback.
  */
 
 import menuData from '../data/menu.json';
 import { getLang, onLangChange } from './i18n.js';
 
 /**
- * Render all menu cards into the grid
+ * Render all menu items into the grid, grouped by category
  */
 export function renderMenu(lang) {
   const grid = document.querySelector('[data-menu-grid]');
@@ -16,45 +17,69 @@ export function renderMenu(lang) {
 
   lang = lang || getLang();
 
-  // Clear existing cards
+  // Clear existing content
   grid.innerHTML = '';
 
   menuData.categories.forEach((category) => {
-    category.items.forEach((item) => {
-      // Render featured item (pršut) into its dedicated container
-      if (item.featured && featured) {
-        renderFeaturedItem(featured, item, lang);
-        return;
-      }
+    // Render the featured item (pršut) into its dedicated showcase container
+    const featuredItem = category.items.find((item) => item.featured);
+    if (featuredItem && featured) {
+      renderFeaturedItem(featured, featuredItem, lang);
+    }
 
-      const card = createMenuCard(item, lang);
-      grid.appendChild(card);
-    });
+    const nonFeaturedItems = category.items.filter((item) => !item.featured);
+    if (nonFeaturedItems.length === 0) return;
+
+    grid.appendChild(createCategorySection(category, nonFeaturedItems, lang));
   });
 }
 
 /**
- * Create a single menu card element
+ * Create a category section: a heading with decorative rule lines,
+ * followed by a divided list of its items (no images).
  */
-function createMenuCard(item, lang) {
-  const card = document.createElement('div');
-  card.className = 'menu-card reveal visible';
-  card.setAttribute('data-menu-item', item.id);
+function createCategorySection(category, items, lang) {
+  const section = document.createElement('div');
+  section.className = 'reveal visible';
+  section.setAttribute('data-menu-category', category.id);
 
-  card.innerHTML = `
-    <div class="aspect-[4/3] img-placeholder mb-4">
-      <span>${lang === 'hr' ? 'Fotografija dolazi uskoro' : 'Photo coming soon'}</span>
-    </div>
-    <h3 class="font-heading text-lg text-brown mb-1">${item.name[lang]}</h3>
-    <p class="text-brown-muted text-sm">${item.description[lang]}</p>
-    ${item.price ? `<p class="text-terracotta font-medium mt-2">${item.price}</p>` : ''}
-  `;
+  const heading = document.createElement('h3');
+  heading.className = 'menu-category-title';
+  heading.textContent = category.name[lang];
+  section.appendChild(heading);
 
-  return card;
+  const list = document.createElement('div');
+  list.className = 'divide-y divide-beige';
+
+  items.forEach((item) => {
+    list.appendChild(createMenuItem(item, lang));
+  });
+
+  section.appendChild(list);
+  return section;
 }
 
 /**
- * Render the featured item (pršut) into its dedicated container
+ * Create a single menu item row (text-only, no image)
+ */
+function createMenuItem(item, lang) {
+  const row = document.createElement('div');
+  row.className = 'menu-item';
+  row.setAttribute('data-menu-item', item.id);
+
+  row.innerHTML = `
+    <div class="flex items-baseline justify-between gap-4">
+      <h4 class="font-heading text-lg text-brown">${item.name[lang]}</h4>
+      ${item.price ? `<span class="text-terracotta font-medium whitespace-nowrap">${item.price}</span>` : ''}
+    </div>
+    <p class="text-brown-muted text-sm mt-1 leading-relaxed">${item.description[lang]}</p>
+  `;
+
+  return row;
+}
+
+/**
+ * Render the featured item (pršut) into its dedicated showcase container
  */
 function renderFeaturedItem(container, item, lang) {
   const nameEl = container.querySelector('[data-featured-name]');

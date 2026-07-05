@@ -26,9 +26,20 @@
     @apply px-6 py-16 md:py-24 md:px-8 lg:px-16;
   }
 
-  /* Menu card */
-  .menu-card {
-    @apply bg-white rounded-lg p-4 border border-beige transition-transform duration-300 hover:-translate-y-1 hover:shadow-md;
+  /* Menu category heading with decorative rule lines on either side */
+  .menu-category-title {
+    @apply flex items-center gap-4 text-terracotta text-sm font-semibold uppercase tracking-widest mb-2;
+  }
+
+  .menu-category-title::before,
+  .menu-category-title::after {
+    content: '';
+    @apply h-px flex-1 bg-terracotta/30;
+  }
+
+  /* Menu item row (text-only, no image) */
+  .menu-item {
+    @apply py-4 transition-colors duration-200 hover:bg-beige/30 -mx-2 px-2 rounded;
   }
 
   /* Gallery image container */
