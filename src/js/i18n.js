@@ -88,13 +88,12 @@ export function toggleLang() {
  * Update the toggle button text
  */
 function updateToggleButton() {
-  const btn = document.querySelector('[data-lang-toggle]');
-  if (btn) {
+  document.querySelectorAll('[data-lang-toggle]').forEach((btn) => {
     btn.textContent = currentLang === 'hr' ? 'EN' : 'HR';
     btn.setAttribute('aria-label',
       currentLang === 'hr' ? 'Switch to English' : 'Prebaci na hrvatski'
     );
-  }
+  });
 }
 
 /**
