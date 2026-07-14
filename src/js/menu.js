@@ -20,17 +20,14 @@ export function renderMenu(lang) {
   // Clear existing content
   grid.innerHTML = '';
 
+  // Render the featured item (pršut) into its dedicated showcase container
+  if (menuData.featured && featured) {
+    renderFeaturedItem(featured, menuData.featured, lang);
+  }
+
   menuData.categories.forEach((category) => {
-    // Render the featured item (pršut) into its dedicated showcase container
-    const featuredItem = category.items.find((item) => item.featured);
-    if (featuredItem && featured) {
-      renderFeaturedItem(featured, featuredItem, lang);
-    }
-
-    const nonFeaturedItems = category.items.filter((item) => !item.featured);
-    if (nonFeaturedItems.length === 0) return;
-
-    grid.appendChild(createCategorySection(category, nonFeaturedItems, lang));
+    if (category.items.length === 0) return;
+    grid.appendChild(createCategorySection(category, category.items, lang));
   });
 }
 
@@ -40,7 +37,10 @@ export function renderMenu(lang) {
  */
 function createCategorySection(category, items, lang) {
   const section = document.createElement('div');
-  section.className = 'reveal visible';
+  const isSingle = items.length === 1;
+  section.className = isSingle
+    ? 'reveal visible md:col-span-2 max-w-md mx-auto'
+    : 'reveal visible';
   section.setAttribute('data-menu-category', category.id);
 
   const heading = document.createElement('h3');

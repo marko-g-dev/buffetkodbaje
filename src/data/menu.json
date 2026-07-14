@@ -1,48 +1,119 @@
 {
+  "featured": {
+    "id": "teleca-koljenica",
+    "name": { "hr": "Pečena teleća koljenica", "en": "Roast veal knuckle" },
+    "description": {
+      "hr": "Zvijezda našeg menija — teleća koljenica s pečenim krumpirima, kiselim kupusom i zapečenom fažolom.",
+      "en": "The star of our menu — veal knuckle with roast potatoes, sauerkraut, and baked beans."
+    }
+  },
   "categories": [
     {
-      "id": "cold",
-      "name": { "hr": "Hladna predjela", "en": "Cold starters" },
+      "id": "gotova-jela",
+      "name": { "hr": "Gotova jela", "en": "Ready-made dishes" },
       "items": [
         {
-          "id": "prsut",
-          "name": { "hr": "Drniški pršut", "en": "Drniš dry-cured ham" },
+          "id": "teleci-gulas",
+          "name": { "hr": "Teleći gulaš sa prilozima", "en": "Veal goulash with sides" },
           "description": {
-            "hr": "Pravi drniški pršut, s bilim, ka šta i mora bit. Ko za bolje ne zna, ne zna šta propušta.",
-            "en": "Real Drniš pršut with the proper white fat, just as it should be. If you haven't tried the real thing, you don't know what you're missing."
+            "hr": "Domaći teleći gulaš serviran sa špagetima, pireom, restanim krumpirom ili grahom.",
+            "en": "Homemade veal goulash served with spaghetti, mashed potatoes, pan-fried potatoes, or beans."
           },
-          "price": null,
-          "featured": true,
-          "image": "food/prsut.webp"
+          "price": null
         },
         {
-          "id": "sir",
-          "name": { "hr": "Domaći sir", "en": "Homemade cheese" },
+          "id": "teleca-peka",
+          "name": { "hr": "Teleća peka sa krumpirima", "en": "Veal under the bell with potatoes" },
           "description": {
-            "hr": "Ovčji sir iz mišine, od lokalnih proizvođača.",
-            "en": "Sheep's cheese aged in a traditional leather sack, from local producers."
+            "hr": "Teletina s krumpirom, pečena ispod peke.",
+            "en": "Veal with potatoes, slow-roasted under the iron bell."
           },
-          "price": null,
-          "featured": false,
-          "image": "food/prsut.webp"
+          "price": null
+        },
+        {
+          "id": "lesa",
+          "name": { "hr": "Leša janjetina i junetina", "en": "Boiled lamb and beef" },
+          "description": {
+            "hr": "Tradicionalno kuhana janjetina i junetina, servirana s prilozima.",
+            "en": "Traditionally boiled lamb and beef, served with sides."
+          },
+          "price": null
+        },
+        {
+          "id": "snicel",
+          "name": { "hr": "Šnicel u toću", "en": "Schnitzel in sauce" },
+          "description": {
+            "hr": "Šnicel u domaćem toću — klasika za svaki dan.",
+            "en": "Schnitzel in homemade sauce — an everyday classic."
+          },
+          "price": null
+        },
+        {
+          "id": "janjeci-gulas",
+          "name": { "hr": "Janjeći gulaš s bižima", "en": "Lamb goulash with peas" },
+          "description": {
+            "hr": "Bogati janjeći gulaš s bižima.",
+            "en": "Rich lamb goulash with peas."
+          },
+          "price": null
         }
       ]
     },
     {
-      "id": "warm",
-      "name": { "hr": "Topla jela", "en": "Warm dishes" },
+      "id": "po-narudzbi",
+      "name": { "hr": "Po narudžbi", "en": "Made to order" },
       "items": [
         {
-          "id": "teletina",
-          "name": { "hr": "Pečena teleteća koljenica", "en": "Roast veal knuckle" },
+          "id": "becki-odrezak",
+          "name": { "hr": "Bečki odrezak", "en": "Wiener schnitzel" },
           "description": {
-            "hr": "Zvijezda našeg menija — teleća koljenica s pečenim krumpirima, kiselim kupusom i zapečenom fažolom.",
-            "en": "The star of our menu — veal knuckle with roast potatoes, sauerkraut, and baked beans."
+            "hr": "Svinjski ili teleći — pohano do zlatne boje.",
+            "en": "Pork or veal — breaded to a golden crisp."
           },
-          "price": null,
-          "featured": true,
-          "image": "food/teletina.webp"
+          "price": null
         },
+        {
+          "id": "zagrebacki-odrezak",
+          "name": { "hr": "Zagrebački odrezak", "en": "Zagreb-style schnitzel" },
+          "description": {
+            "hr": "Svinjski ili teleći — pohano sa šunkom i sirom.",
+            "en": "Pork or veal — breaded and stuffed with ham and cheese."
+          },
+          "price": null
+        },
+        {
+          "id": "drniski-odrezak",
+          "name": { "hr": "Drniški odrezak", "en": "Drniš-style schnitzel" },
+          "description": {
+            "hr": "Svinjski ili teleći — pohano sa pršutom i sirom. Naša varijanta.",
+            "en": "Pork or veal — breaded with pršut and cheese. Our local twist."
+          },
+          "price": null
+        },
+        {
+          "id": "mjesano-meso",
+          "name": { "hr": "Mješano meso", "en": "Mixed grill" },
+          "description": {
+            "hr": "Ćevapi, ražnjići i ostalo s roštilja.",
+            "en": "Ćevapi, skewers, and more from the grill."
+          },
+          "price": null
+        },
+        {
+          "id": "naravni-odrezak",
+          "name": { "hr": "Naravni odrezak", "en": "Plain cutlet" },
+          "description": {
+            "hr": "Svinjski ili teleći — na prirodan način, bez pohanja.",
+            "en": "Pork or veal — pan-seared, no breading."
+          },
+          "price": null
+        }
+      ]
+    },
+    {
+      "id": "specijalitet",
+      "name": { "hr": "Specijalitet srijedom", "en": "Wednesday special" },
+      "items": [
         {
           "id": "tripice",
           "name": { "hr": "Tripice", "en": "Tripe stew" },
@@ -50,59 +121,7 @@
             "hr": "Domaće tripice, ka šta ih je baba radila. Na suvom mesu, na prasetini.",
             "en": "Homemade tripe stew, just like grandma used to make. Cooked with smoked pork, the traditional way."
           },
-          "price": null,
-          "featured": false,
-          "image": "food/tripice.webp"
-        },
-        {
-          "id": "grah",
-          "name": { "hr": "Grah i manistre", "en": "Bean and pasta stew" },
-          "description": {
-            "hr": "Domaći grah ili manistre s ječmom — klasika za radnog čovika.",
-            "en": "Homemade bean stew or barley pasta — a classic that fuels working folk."
-          },
-          "price": null,
-          "featured": false,
-          "image": "food/grah.webp"
-        },
-        {
-          "id": "peka",
-          "name": { "hr": "Ispod peke", "en": "Under the bell (peka)" },
-          "description": {
-            "hr": "Teletina ili janjetina s krumpirom, pečena ispod peke ka šta se radi oduvijek.",
-            "en": "Veal or lamb with potatoes, slow-roasted under the iron bell the way it's always been done."
-          },
-          "price": null,
-          "featured": false,
-          "image": "food/peka.webp"
-        }
-      ]
-    },
-    {
-      "id": "grilled",
-      "name": { "hr": "S roštilja", "en": "From the grill" },
-      "items": [
-        {
-          "id": "cevapi",
-          "name": { "hr": "Ćevapi", "en": "Ćevapi (grilled minced meat)" },
-          "description": {
-            "hr": "Domaći ćevapi s lukom i kajmakom.",
-            "en": "Homemade ćevapi with onions and kajmak cream."
-          },
-          "price": null,
-          "featured": false,
-          "image": "food/cevapi.webp"
-        },
-        {
-          "id": "raznjici",
-          "name": { "hr": "Ražnjići", "en": "Skewers" },
-          "description": {
-            "hr": "Sočni komadi mesa na ražnju.",
-            "en": "Juicy meat skewers off the grill."
-          },
-          "price": null,
-          "featured": false,
-          "image": "food/raznjici.webp"
+          "price": null
         }
       ]
     }
