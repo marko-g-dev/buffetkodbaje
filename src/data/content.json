@@ -67,11 +67,11 @@
   },
   "contact.hours_label": { "hr": "Radno vrijeme", "en": "Opening hours" },
   "contact.hours": {
-    "hr": "Pon–Sub: 07:00–16:00 | Ned: Zatvoreno",
-    "en": "Mon–Sat: 07:00–16:00 | Sun: Closed"
+    "hr": "Pon–Sub: 07:00–15:00 | Ned: Zatvoreno",
+    "en": "Mon–Sat: 07:00–15:00 | Sun: Closed"
   },
   "contact.phone_label": { "hr": "Telefon", "en": "Phone" },
-  "contact.phone": { "hr": "+385 22 887 940 | +385 91 549 2397", "en": "+385 22 887 940 | +385 91 549 2397" },
+  "contact.phone": { "hr": "+385 22 887 940", "en": "+385 22 887 940" },
   "contact.note": {
     "hr": "Nalazimo se na glavnoj pjaci u Drnišu.",
     "en": "We are located on the main market square in Drniš."
