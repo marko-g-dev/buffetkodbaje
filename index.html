@@ -171,7 +171,33 @@
 
       <!-- Menu list, grouped by category (rendered dynamically by menu.js) -->
       <div data-menu-grid class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-10">
-        <!-- Category sections injected by src/js/menu.js -->
+        <!-- Static fallback for SEO (replaced by menu.js on load) -->
+        <div data-menu-category="gotova-jela">
+          <h3 class="menu-category-title">Gotova jela</h3>
+          <div class="divide-y divide-beige">
+            <div class="menu-item"><div class="flex items-baseline justify-between gap-4"><h4 class="font-heading text-lg text-brown">Teleći gulaš sa prilozima</h4></div><p class="text-brown-muted text-sm mt-1 leading-relaxed">Domaći teleći gulaš serviran sa špagetima, pireom, restanim krumpirom ili grahom.</p></div>
+            <div class="menu-item"><div class="flex items-baseline justify-between gap-4"><h4 class="font-heading text-lg text-brown">Teleća peka sa krumpirima</h4></div><p class="text-brown-muted text-sm mt-1 leading-relaxed">Teletina s krumpirom, pečena ispod peke.</p></div>
+            <div class="menu-item"><div class="flex items-baseline justify-between gap-4"><h4 class="font-heading text-lg text-brown">Leša janjetina i junetina</h4></div><p class="text-brown-muted text-sm mt-1 leading-relaxed">Tradicionalno kuhana janjetina i junetina, servirana s prilozima.</p></div>
+            <div class="menu-item"><div class="flex items-baseline justify-between gap-4"><h4 class="font-heading text-lg text-brown">Šnicel u toću</h4></div><p class="text-brown-muted text-sm mt-1 leading-relaxed">Šnicel u domaćem toću — klasika za svaki dan.</p></div>
+            <div class="menu-item"><div class="flex items-baseline justify-between gap-4"><h4 class="font-heading text-lg text-brown">Janjeći gulaš s bižima</h4></div><p class="text-brown-muted text-sm mt-1 leading-relaxed">Bogati janjeći gulaš s bižima.</p></div>
+          </div>
+        </div>
+        <div data-menu-category="po-narudzbi">
+          <h3 class="menu-category-title">Po narudžbi</h3>
+          <div class="divide-y divide-beige">
+            <div class="menu-item"><div class="flex items-baseline justify-between gap-4"><h4 class="font-heading text-lg text-brown">Bečki odrezak</h4></div><p class="text-brown-muted text-sm mt-1 leading-relaxed">Svinjski ili teleći — pohano do zlatne boje.</p></div>
+            <div class="menu-item"><div class="flex items-baseline justify-between gap-4"><h4 class="font-heading text-lg text-brown">Zagrebački odrezak</h4></div><p class="text-brown-muted text-sm mt-1 leading-relaxed">Svinjski ili teleći — pohano sa šunkom i sirom.</p></div>
+            <div class="menu-item"><div class="flex items-baseline justify-between gap-4"><h4 class="font-heading text-lg text-brown">Drniški odrezak</h4></div><p class="text-brown-muted text-sm mt-1 leading-relaxed">Svinjski ili teleći — pohano sa pršutom i sirom. Naša varijanta.</p></div>
+            <div class="menu-item"><div class="flex items-baseline justify-between gap-4"><h4 class="font-heading text-lg text-brown">Mješano meso</h4></div><p class="text-brown-muted text-sm mt-1 leading-relaxed">Ćevapi, ražnjići i ostalo s roštilja.</p></div>
+            <div class="menu-item"><div class="flex items-baseline justify-between gap-4"><h4 class="font-heading text-lg text-brown">Naravni odrezak</h4></div><p class="text-brown-muted text-sm mt-1 leading-relaxed">Svinjski ili teleći — na prirodan način, bez pohanja.</p></div>
+          </div>
+        </div>
+        <div data-menu-category="specijalitet" class="md:col-span-2 max-w-md mx-auto">
+          <h3 class="menu-category-title">Specijalitet srijedom</h3>
+          <div class="divide-y divide-beige">
+            <div class="menu-item"><div class="flex items-baseline justify-between gap-4"><h4 class="font-heading text-lg text-brown">Tripice</h4></div><p class="text-brown-muted text-sm mt-1 leading-relaxed">Domaće tripice, ka šta ih je baba radila. Na suvom mesu, na prasetini.</p></div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
